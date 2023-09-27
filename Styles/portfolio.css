@@ -6,10 +6,11 @@ body {
 /* header section styles */
 .header {
     background-color: #FFF8F3;
-    ;
-    background-image: url(../images/header_bg.png);
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, left center;
+    padding-left: 100px;
+    height: 827px;
 }
 
 /* nav related styles */
@@ -49,10 +50,11 @@ a {
     border-radius: 5px;
     background: #FD6E0A;
     border: 0;
-    color: var(--White-Color, #FFF);
+    color: #FFF;
     font-size: 20px;
     font-weight: 700;
     padding: 18px 35px 18px 35px;
+    margin-right: 30px;
 }
 
 /* banner section styles */
@@ -64,14 +66,14 @@ a {
 }
 
 .banner-greeting {
-    color: var(--Dark-02, #474747);
+    color: #474747;
     font-size: 45px;
     font-weight: 600;
     margin: 0px;
 }
 
 .banner-title {
-    color: var(--Dark-01, #181818);
+    color: #181818;
     font-size: 85px;
     font-weight: 700;
     margin: 0px;
@@ -82,12 +84,25 @@ a {
     margin-bottom: 30px;
 }
 
-img {
-    width: 500px;
-}
-
 .b1 {
     margin-right: 10px
+}
+
+.call-button {
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+    background: #FFF8F3;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px 18px 35px;
+}
+
+.hardy-img {
+    width: 550px;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 /* main section styles */
@@ -186,15 +201,14 @@ main {
     line-height: 28px;
 }
 
-/* Resume Section Styles */
-
+/* resume section styles */
 .resume-container {
     display: flex;
     gap: 70px;
 
 }
 
-.resume-container hr{
+.resume-container hr {
     margin: 30px 0px;
 }
 
@@ -227,13 +241,44 @@ main {
     margin-top: 20px;
 }
 
-.arrow{
+.download-cv {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+
+/* footer section styles */
+
+footer {
+    display: flex;
+    width: 1600px;
+    height: 780px;
+    background: #FFF8F3;
+    padding: 130px 230px;
+    gap: 100px;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+.icon {
     width: 24px;
 
 }
 
-.download-cv{
-    text-align: center;
-    margin-top: 50px;
+.social-links a {
+    margin-right: 25px;
 }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+textarea {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 18px 30px;
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+    width: 90%;
+}
